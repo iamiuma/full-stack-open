@@ -6,13 +6,15 @@ const App = () => {
   const [right, setRight] = useState(0)
   const [allClicks, setAll] = useState([])
 
-  const handleLeftClick = () =>
+  const handleLeftClick = () => {
     setLeft(left + 1)
     setAll(allClicks.concat('L'))
+  }
 
-  const handleRightClick = () =>
+  const handleRightClick = () => {
     setRight(right + 1)
     setAll(allClicks.concat('R'))
+  }
 
   return (
     <div>
